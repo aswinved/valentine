@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💝 Valentine's Surprise 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-background"></div>
+    
+    <div class="container">
+        <!-- Welcome Screen -->
+        <section id="welcome" class="section active">
+            <div class="card">
+                <div class="heart-decoration">
+                    <span class="heart">💝</span>
+                    <span class="heart">💕</span>
+                    <span class="heart">💖</span>
+                </div>
+                <h1 class="title">Happy Valentine's Day!</h1>
+                <p class="subtitle">I have something special to ask you...</p>
+                <p class="description">But first, let me get to know you better! 💕</p>
+                <button class="btn-primary" onclick="nextSection('question1')">Let's Begin! 💗</button>
+            </div>
+        </section>
+ 
+        <!-- Question 1: Favorite Drink -->
+        <section id="question1" class="section">
+            <div class="card">
+                <h2 class="question-title">What's your favorite drink? ☕</h2>
+                <div class="options-grid">
+                    <div class="option-card" onclick="selectOption('question1', 'coffee')">
+                        <div class="option-icon">☕</div>
+                        <div class="option-label">Coffee</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question1', 'tea')">
+                        <div class="option-icon">🍵</div>
+                        <div class="option-label">Tea</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question1', 'juice')">
+                        <div class="option-icon">🧃</div>
+                        <div class="option-label">Juice</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question1', 'smoothie')">
+                        <div class="option-icon">🥤</div>
+                        <div class="option-label">Smoothie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Question 2: Favorite Color -->
+        <section id="question2" class="section">
+            <div class="card">
+                <h2 class="question-title">What's your favorite color? 🎨</h2>
+                <div class="options-grid">
+                    <div class="option-card color-option" onclick="selectOption('question2', 'pink')">
+                        <div class="color-circle" style="background: linear-gradient(135deg, #ff6b9d, #ffc1e0);"></div>
+                        <div class="option-label">Pink</div>
+                    </div>
+                    <div class="option-card color-option" onclick="selectOption('question2', 'red')">
+                        <div class="color-circle" style="background: linear-gradient(135deg, #ff0844, #ff6b9d);"></div>
+                        <div class="option-label">Red</div>
+                    </div>
+                    <div class="option-card color-option" onclick="selectOption('question2', 'purple')">
+                        <div class="color-circle" style="background: linear-gradient(135deg, #a855f7, #ec4899);"></div>
+                        <div class="option-label">Purple</div>
+                    </div>
+                    <div class="option-card color-option" onclick="selectOption('question2', 'blue')">
+                        <div class="color-circle" style="background: linear-gradient(135deg, #3b82f6, #60a5fa);"></div>
+                        <div class="option-label">Blue</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Question 3: Favorite Activity -->
+        <section id="question3" class="section">
+            <div class="card">
+                <h2 class="question-title">What's your favorite activity? 🎯</h2>
+                <div class="options-grid">
+                    <div class="option-card" onclick="selectOption('question3', 'reading')">
+                        <div class="option-icon">📚</div>
+                        <div class="option-label">Reading</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question3', 'movies')">
+                        <div class="option-icon">🎬</div>
+                        <div class="option-label">Movies</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question3', 'music')">
+                        <div class="option-icon">🎵</div>
+                        <div class="option-label">Music</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question3', 'sports')">
+                        <div class="option-icon">⚽</div>
+                        <div class="option-label">Sports</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question3', 'art')">
+                        <div class="option-icon">🎨</div>
+                        <div class="option-label">Art</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question3', 'gaming')">
+                        <div class="option-icon">🎮</div>
+                        <div class="option-label">Gaming</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Question 4: Dinner Location -->
+        <section id="question4" class="section">
+            <div class="card">
+                <h2 class="question-title">Where should we have our Valentine's dinner? 🍽️</h2>
+                <div class="options-grid">
+                    <div class="option-card" onclick="selectOption('question4', 'fancy')">
+                        <div class="option-icon">🌟</div>
+                        <div class="option-label">Fancy Restaurant</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question4', 'cozy')">
+                        <div class="option-icon">🕯️</div>
+                        <div class="option-label">Cozy Café</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question4', 'home')">
+                        <div class="option-icon">🏠</div>
+                        <div class="option-label">Home Cooked</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question4', 'outdoor')">
+                        <div class="option-icon">🌳</div>
+                        <div class="option-label">Outdoor Picnic</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Question 5: Food Choice -->
+        <section id="question5" class="section">
+            <div class="card">
+                <h2 class="question-title">What should we eat? 🍕</h2>
+                <div class="options-grid">
+                    <div class="option-card" onclick="selectOption('question5', 'italian')">
+                        <div class="option-icon">🍝</div>
+                        <div class="option-label">Italian</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question5', 'japanese')">
+                        <div class="option-icon">🍣</div>
+                        <div class="option-label">Japanese</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question5', 'mexican')">
+                        <div class="option-icon">🌮</div>
+                        <div class="option-label">Mexican</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption('question5', 'dessert')">
+                        <div class="option-icon">🍰</div>
+                        <div class="option-label">Just Dessert!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Final Question: Be My Valentine -->
+        <section id="final-question" class="section">
+            <div class="card big-question-card">
+                <div class="heart-decoration-big">
+                    <span class="heart pulse">💖</span>
+                </div>
+                <h2 class="big-question">Will you be my Valentine? 💕</h2>
+                <p class="final-subtitle">This is what I've been wanting to ask... 💝</p>
+                <div class="final-buttons">
+                    <button id="yes-button" class="btn-yes" onclick="celebrate()">
+                        Yes! 💗
+                    </button>
+                    <button id="no-button" class="btn-no">
+                        No 😢
+                    </button>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Celebration Screen -->
+        <section id="celebration" class="section">
+            <div class="celebration-content">
+                <div class="balloons-container"></div>
+                <div class="confetti-container"></div>
+                <div class="celebration-message">
+                    <h1 class="celebration-title">Yay! 🎉💖🎉</h1>
+                    <p class="celebration-text">You made me the happiest person ever!</p>
+                    <div class="floating-hearts-celebration"></div>
+                    <button class="btn-primary" onclick="showFinalMessage()">Continue 💕</button>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- Final Love Message -->
+        <section id="final-message" class="section">
+            <div class="final-card">
+                <div class="floating-hearts-final"></div>
+                <h1 class="final-title">You're Amazing! ✨</h1>
+                <p class="final-poem">
+                    Roses are red,<br>
+                    Violets are blue,<br>
+                    This Valentine's Day,<br>
+                    I want to spend with you! 💕
+                </p>
+                <p class="final-dedication">
+                    Thank you for making this day special! 💖<br>
+                    I can't wait for our Valentine's dinner together! 🍽️✨
+                </p>
+                <div class="final-hearts">
+                    <span class="heart-final">💕</span>
+                    <span class="heart-final">💖</span>
+                    <span class="heart-final">💝</span>
+                    <span class="heart-final">💗</span>
+                    <span class="heart-final">💕</span>
+                </div>
+            </div>
+        </section>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
